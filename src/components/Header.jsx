@@ -34,7 +34,7 @@ function Header() {
         </nav>
        
     </header>
-    <div className={`md:hidden absolute top-[7%] left-0 shadow-lg
+    <div className={`md:hidden absolute top-[100px] left-0 shadow-lg
         ${toggleMenu ? 'visible opacity-100' : 'opacity-0 invisible'} transition-all delay-100
         x-10 w-full bg-white`}>
         <ul className='font-bold text-[0.89rem] font-display flex items-center flex-col'>
