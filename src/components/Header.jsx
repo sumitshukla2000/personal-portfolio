@@ -9,7 +9,7 @@ function Header() {
     
   return (
     <>
-    <header className='max-w-[100%] z-20 h-[90px] p-4 flex items-center shadow-md shadow-slate-400'>
+    <header className='max-w-[100%] bg-whitee sticky top-0 z-20 h-[90px] p-4 flex items-center shadow-md shadow-slate-400'>
         <nav className='w-[100%]  flex items-center justify-between mx-auto px-4'>
             
             <div className='md:[50%] mx-4'>
@@ -41,7 +41,7 @@ function Header() {
                     {navLinks.map(navLink => (
                         <li className='basis-1/4h-[40px] flex justify-end px-8 py-1 text-center border-b border-slate-300 w-full' key={navLink.id}>
                             
-                            <a href="#" className="hover:text-slate-500 transition ease-in-out delay-75 py-4 tracking-[0.2rem]">
+                            <a href={`/#${navLink.id}`} className="hover:text-slate-500 transition ease-in-out delay-75 py-4 tracking-[0.2rem]">
                                 {navLink.title.toUpperCase()}
                                  </a>
                         </li>

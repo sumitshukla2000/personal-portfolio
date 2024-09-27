@@ -1,10 +1,9 @@
-import { div } from 'framer-motion/client'
 import { skills } from './constants'
-
+import '../index.css'
 function About() {
     return (
         <>
-            <div className="lg:mt-24 w-full mt-12 bg-dark py-6 pb-32">
+            <div id='about' className="block lg:mt-24 w-full mt-12 bg-dark py-6 pb-32">
                 <div className=" w-[80%] mx-auto pt-12">
                     <h1 className="text-3xl font-body font-extrabold text-center text-whitee">ABOUT ME</h1>
                     <div className="bg-blue h-[5px] w-[70px] mx-auto mt-2 rounded-xl"></div>
@@ -15,7 +14,7 @@ function About() {
                 </div>
 
 
-                <div className="max-w-[90%] mt-12 mx-auto flex gap-2 justify-center flex-wrap md:flex-nowrap ">
+                <div className="block max-w-[90%] mt-12 mx-auto flex gap-2 justify-center flex-wrap md:flex-nowrap ">
                 {/* get to know */}
                     <div className='md:w-[50%] w-full'>
                         <h1 className="text-whitee px-2 font-bold text-2xl py-6 font-body">Get to know me!</h1>

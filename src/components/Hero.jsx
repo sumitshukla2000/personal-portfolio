@@ -1,12 +1,13 @@
 import React from 'react'
 import avatar  from '../assets/man.png'
 // import { Button } from 'primereact/button';  
+import '../index.css'
 
 
 function Hero() {
     return (
         <>
-            <div className='w-full md:min-h-[80vh] min-h-[100vh] '>
+            <div id='home' className='block w-full md:min-h-[80vh] min-h-[100vh] '>
 
                 <div className='w-full pt-16'>
                     <div className='h-[200px] w-[200px] bg-blue rounded-full mx-auto flex items-center'>
