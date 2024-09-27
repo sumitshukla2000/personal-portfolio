@@ -19,7 +19,7 @@ function Header() {
             <div className='md:block hidden'>
                 <ul className='flex items-center md:justify-evenly font-body font-bold md:text-[1.2rem] text-[0.8rem]'>
                     {navLinks.map(navLink => (
-                        <li className='basis-1/5 bg-yellow-500 mx-[10px]' key={navLink.id}>
+                        <li className='basis-1/5 mx-[10px]' key={navLink.id}>
                             <a href="#" className={`hover:text-blue transition ease-in-out delay-75 py-4 px-2 ${active === navLink.title ? "text-blue" : "text-black"}`} onClick={()=>setActive(navLink.title)}>{navLink.title.toUpperCase()}</a>
                         </li>
                     ))}
