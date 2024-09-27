@@ -9,17 +9,17 @@ function Header() {
     
   return (
     <>
-    <header className='max-w-full z-20 h-[90px] p-4 flex items-center shadow-md shadow-slate-400'>
-        <nav className='md:w-full w-[100%] flex items-center justify-between mx-auto px-4'>
+    <header className='max-w-[100%] z-20 h-[90px] p-4 flex items-center shadow-md shadow-slate-400'>
+        <nav className='w-[100%]  flex items-center justify-between mx-auto px-4'>
             
-            <div className='mx-4'>
+            <div className='md:[50%] mx-4'>
                 <img src={avatar} alt="logo" className='h-[40px] w-[40px]'/>
             </div>
 
-            <div className='md:w-[50%] md:block hidden w-[80%]'>
+            <div className='md:block hidden'>
                 <ul className='flex items-center md:justify-evenly font-body font-bold md:text-[1.2rem] text-[0.8rem]'>
                     {navLinks.map(navLink => (
-                        <li className='basis-1/5 mx-[10px]' key={navLink.id}>
+                        <li className='basis-1/5 bg-yellow-500 mx-[10px]' key={navLink.id}>
                             <a href="#" className={`hover:text-blue transition ease-in-out delay-75 py-4 px-2 ${active === navLink.title ? "text-blue" : "text-black"}`} onClick={()=>setActive(navLink.title)}>{navLink.title.toUpperCase()}</a>
                         </li>
                     ))}
@@ -34,7 +34,7 @@ function Header() {
         </nav>
        
     </header>
-    <div className={`md:hidden absolute top-[15%] left-0 shadow-lg
+    <div className={`md:hidden absolute top-[7%] left-0 shadow-lg
         ${toggleMenu ? 'visible opacity-100' : 'opacity-0 invisible'} transition-all delay-100
         x-10 w-full bg-white`}>
         <ul className='font-bold text-[0.89rem] font-display flex items-center flex-col'>

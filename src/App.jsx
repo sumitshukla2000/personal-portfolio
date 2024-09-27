@@ -4,6 +4,7 @@ import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import { delay, motion } from "framer-motion"
+import About from "./components/About";
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
       }}>
     <Header />
     <Hero />
+    <About />
     </motion.div>
     </>
   )

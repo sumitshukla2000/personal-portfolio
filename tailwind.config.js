@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {
       colors : {
-        'blue' : '#6E07F3'
+        'blue' : '#6E07F3',
+        'dark' : 'hsl(216, 19%, 16%);',
+        'secDark' :'hsl(217, 10%, 25%);',
+        'whitee' : 'hsl(0, 0%, 100%);'
       },
       fontFamily : {
         body: ['Nunito', 'sans-serif'],
