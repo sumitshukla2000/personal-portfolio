@@ -34,8 +34,8 @@ function About() {
                 Feel free to reach out—I’m always up for a new challenge, whether it’s a full-time role or freelance work. Let’s build something awesome together!
                 </p>
 
-                <div className='flex justify-center items-center md:block'>
-                <button className="mt-4 mx-2 transition ease-in hover:translate-y-[-5%] text-whitee opacity-80 font-display text-sm bg-blue px-12 rounded  py-4 shadow-[2px_2px_16px] shadow-blue font-extrathin tracking-widest uppercase">Contact</button>
+                <div className='flex justify-center items-center  md:block'>
+                <button className="mt-4 mx-2 transition ease-in hover:translate-y-[-5%] text-whitee opacity-80 font-display text-sm bg-blue px-12 rounded  py-4 shadow-[0px_0px_100px] shadow-blue font-extrathin tracking-widest uppercase">Contact</button>
                 </div>
                     </div>
 
@@ -46,7 +46,7 @@ function About() {
                    <div className='md:w-[90%] md:justify-start w-full flex flex-wrap justify-center'>
                    {
                         skills.map(skill => (
-                            <p key={skill.id} className='animate-pulse shadow-sm shadow-secDark py-2 px-4 mr-2 rounded-md text-whitee opacity-80 text-md bg-secDark my-2'>
+                            <p key={skill.id} className='animate-pulse cursor-pointer shadow-sm shadow-secDark py-2 px-4 mr-2 rounded-md text-whitee opacity-80 text-md bg-secDark my-2'>
                                 {skill.title.toLocaleUpperCase()}
                             </p>
                         ))
