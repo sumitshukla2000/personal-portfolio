@@ -19,7 +19,7 @@ const Projects = () => {
             <div className='w-full py-4 px-2'>
             {
                 project.map(project => (
-                    <div key={project.id} className='md:flex-nowrap sm:h-[100vh] md:h-[100vh] lg:h-[70vh] text-wrap my-4 w-[90%] px-6 mx-auto flex flex-wrap md:justify-between md:gap-6 sm:items-center md:items-start sm:mb-24 mb-12'>
+                    <div key={project.id} className='blockk md:flex-nowrap sm:h-[100vh] md:h-[100vh] lg:h-[70vh] text-wrap my-4 w-[90%] px-6 mx-auto flex flex-wrap md:justify-between md:gap-6 sm:items-center md:items-start sm:mb-24 mb-12'>
 
                         <section className='section relative md:rounded-[20px] md:w-[50%] sm:w-full sm:h-[20rem] md:h-[18rem] mx-auto md:mt-12 overflow-hidden rounded-md shadow-lg shadow-dark border border-slate-800 cursor-pointer '>
                         <img src={project.url} alt={project.title} className=' image z-[-1] hover:scale-[1.9] h-full w-full  mx-auto' />
