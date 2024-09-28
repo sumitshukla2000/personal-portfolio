@@ -7,8 +7,7 @@ import '../index.css'
 function Hero() {
     return (
         <>
-            <div id='home' className='block z-10 w-full md:min-h-[80vh] min-h-[100vh] '>
-
+            <div id='home' className='blockk z-10 w-full md:min-h-[80vh] min-h-[100vh] '>
                 <div className='w-full pt-16'>
                     <div className='h-[200px] w-[200px] bg-blue rounded-full mx-auto flex items-center'>
                     <img src={avatar} alt="avatar" className='w-[190px] h-[190px] mx-auto rounded-full'/>

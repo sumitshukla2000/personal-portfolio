@@ -5,7 +5,7 @@ import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import { delay, motion } from "framer-motion"
 import About from "./components/About";
-
+import Projects from "./components/Projects";
 function App() {
 
   return (
@@ -41,6 +41,7 @@ function App() {
     <Header />
     <Hero />
     <About />
+    <Projects />
     </motion.div>
     </>
   )

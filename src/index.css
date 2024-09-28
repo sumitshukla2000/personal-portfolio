@@ -22,8 +22,26 @@ html{
     }
 }
 
-.block{
+.blockk{
     animation:appear;
     animation-timeline:view();
     animation-range:entry 0% cover 40%;
+}
+
+.image{
+    transition : transform 1s ease;
+}
+
+.section:hover .image{
+    transform:scale(2);
+}
+
+.btn{
+    box-shadow : 5px 10px 10px black;
+    transform:scale(0.5);
+    transition:transform 1s ease;
+}
+.coverr:hover .btn{
+    opacity:1;
+    transform:scale(1);
 }
