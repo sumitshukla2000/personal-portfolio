@@ -9,8 +9,8 @@ function Header() {
     
   return (
     <>
-    <header className='max-w-[100%] bg-whitee sticky top-0 z-20 h-[90px] p-4 flex items-center shadow-md shadow-slate-400'>
-        <nav className='w-[100%]  flex items-center justify-between mx-auto px-4'>
+    <header className='max-w-[100%] sticky top-0 z-50 h-[80px] p-4 bg-whitee shadow-md shadow-slate-400'>
+        <nav className='w-[100%] bg-whitee h-full flex items-center justify-between mx-auto px-4'>
             
             <div className='md:[50%] mx-4'>
                 <img src={avatar} alt="logo" className='h-[40px] w-[40px]'/>
@@ -32,9 +32,9 @@ function Header() {
                 </button>
             </div>
         </nav>
-       
-    </header>
-    <div className={`md:hidden absolute top-[100px] left-0 shadow-lg
+                    
+
+        <div className={`md:hidden absolute top-[80px] left-0 z-20 shadow-lg border-t border-slate-300
         ${toggleMenu ? 'visible opacity-100' : 'opacity-0 invisible'} transition-all delay-100
         x-10 w-full bg-white`}>
         <ul className='font-bold text-[0.89rem] font-display flex items-center flex-col'>
@@ -48,6 +48,9 @@ function Header() {
                     ))}
                      </ul>
         </div>
+    </header>
+
+    
     </>
   )
 }
