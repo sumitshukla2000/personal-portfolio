@@ -1,3 +1,4 @@
+import 'primeicons/primeicons.css';
 import { project1 , project2 , project3 , project4 } from "../"
 
 export const navLinks = [
@@ -92,4 +93,23 @@ export const project = [
         description : " I have recreated the Computer Application Department's website using modern web technologies—HTML5, CSS3, and JavaScript. The new website features a clean and responsive design that enhances user experience across all devices. The goal was to streamline content, improve navigation, and create an engaging interface that reflects the department's focus on innovation and technology."
     }
     
+]
+
+
+export const socialLinks = [
+    {
+        id:'twitter',
+        linkk : "https://x.com/SumitSh96584113",
+        icon : "pi pi-twitter"
+    },
+    {
+        id:'linkedin',
+        linkk : "https://www.linkedin.com/in/sumit-shukla-5152aa222/",
+        icon : "pi pi-linkedin"
+    },
+    {
+        id:'github',
+        linkk : "https://github.com/sumitshukla2000",
+        icon : "pi pi-github"
+    }
 ]
