@@ -2,6 +2,8 @@ import React, { useState , useRef } from 'react'
 import { navLinks } from './constants'
 import avatar from '../assets/man.png'
 import 'primeicons/primeicons.css';
+import { Link, animateScroll as scroll } from 'react-scroll';
+
 
 function Header() {
     const [active , setActive] = useState('Home')
@@ -20,7 +22,15 @@ function Header() {
                 <ul className='flex items-center md:justify-evenly font-body font-bold md:text-[1.2rem] text-[0.8rem]'>
                     {navLinks.map(navLink => (
                         <li className='basis-1/5 mx-[10px]' key={navLink.id}>
-                            <a href="#" className={`hover:text-blue transition ease-in-out delay-75 py-4 px-2 ${active === navLink.title ? "text-blue" : "text-black"}`} onClick={()=>setActive(navLink.title)}>{navLink.title.toUpperCase()}</a>
+                            <Link to={navLink.id}
+                            spy={true}
+                            offset={-90}
+                            smooth={true}
+                            duration={100} 
+                            className={`hover:text-blue cursor-pointer transition ease-in-out delay-75 py-4 px-2 }
+                                ${active === navLink.title ? "text-blue" : "text-black"}` 
+                            }
+                             onClick={()=>setActive(navLink.title)}>{navLink.title.toUpperCase()}</Link>
                         </li>
                     ))}
                 </ul>
@@ -41,9 +51,16 @@ function Header() {
                     {navLinks.map(navLink => (
                         <li className='basis-1/4h-[40px] flex justify-end px-8 py-1 text-center border-b border-slate-300 w-full' key={navLink.id}>
                             
-                            <a href={`/#${navLink.id}`} className="hover:text-slate-500 transition ease-in-out delay-75 py-4 tracking-[0.2rem]">
+                            <Link to={navLink.id} 
+                            spy={true}
+                            offset={-90}
+                            smooth={true}
+                            duration={100} 
+                            className={` transition ease-in-out delay-75 py-4 tracking-[0.2rem] ${active === navLink.title ? "text-blue" : "text-black"}`}
+                                onClick={()=>setActive(navLink.title)}
+                            >
                                 {navLink.title.toUpperCase()}
-                                 </a>
+                                 </Link>
                         </li>
                     ))}
                      </ul>

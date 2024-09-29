@@ -3,7 +3,7 @@ import '../index.css'
 function About() {
     return (
         <>
-            <div id='about' className="blockk lg:mt-24 w-full mt-12 bg-dark py-6 pb-32">
+            <div id='about' className="blockk lg:mt-24 py-6 pb-32 w-full mt-12 bg-dark min-h-screen">
                 <div className=" w-[80%] mx-auto pt-12">
                     <h1 className="text-3xl font-body font-extrabold text-center text-whitee">ABOUT ME</h1>
                     <div className="bg-blue h-[5px] w-[70px] mx-auto mt-2 rounded-xl"></div>

@@ -4,7 +4,7 @@ import Form from './Form'
 const Contact = () => {
   return (
     <>
-    <div className='w-full h-full'>
+    <div id='contact' className='w-full h-full min-h-screen'>
         <div className='w-full bg-secDark pb-12'>
 
             {/* <div className='max-h-[200vh]'>
