@@ -8,6 +8,11 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 function Header() {
     const [active , setActive] = useState('Home')
     const [toggleMenu , setToggleMenu] = useState(false)
+
+    const toggleFun = (linkk) => {
+        setActive(linkk)
+        setToggleMenu(prev => !prev)
+    }
     
   return (
     <>
@@ -30,7 +35,8 @@ function Header() {
                             className={`hover:text-blue cursor-pointer transition ease-in-out delay-75 py-4 px-2 }
                                 ${active === navLink.title ? "text-blue" : "text-black"}` 
                             }
-                             onClick={()=>setActive(navLink.title)}>{navLink.title.toUpperCase()}</Link>
+                             onClick={() => toggleFun(navLink.title) }
+                             >{navLink.title.toUpperCase()}</Link>
                         </li>
                     ))}
                 </ul>
@@ -56,8 +62,9 @@ function Header() {
                             offset={-90}
                             smooth={true}
                             duration={100} 
-                            className={` transition ease-in-out delay-75 py-4 tracking-[0.2rem] ${active === navLink.title ? "text-blue" : "text-black"}`}
-                                onClick={()=>setActive(navLink.title)}
+                            className={` transition ease-in-out delay-75 py-4 tracking-[0.2rem] ${active === navLink.title ? "text-blue" : "text-black"}
+                            // ${toggleMenu ? 'visible opacity-100' : 'opacity-0 invisible'}`}
+                                onClick={()=>toggleFun(navLink.title)}
                             >
                                 {navLink.title.toUpperCase()}
                                  </Link>

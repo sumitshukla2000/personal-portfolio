@@ -1,5 +1,6 @@
 import React from 'react'
 import avatar  from '../assets/man.png'
+import { Link , animateScroll as scroll} from 'react-scroll'
 // import { Button } from 'primereact/button';  
 import '../index.css'
 
@@ -31,9 +32,14 @@ function Hero() {
         </div> */}
 
         <div className='sm:py-6 w-[80%] mx-auto mt-4 pb-2 flex items-center justify-center'> 
-            <a href='#' className='font-body font-extralight text-white bg-blue py-2 px-12 text-md tracking-[2px] rounded-md  shadow-slate-500 transition ease-in-out focus:outline-none delay-50 hover:shadow-lg hover:translate-y-[-3px]'>
+            <Link to='projects'
+             spy={true}
+             offset={-90}
+             smooth={true}
+             duration={100}
+            className='font-body font-extralight text-white bg-blue py-2 px-12 text-md tracking-[2px] rounded-md  shadow-slate-500 transition ease-in-out focus:outline-none delay-50 hover:shadow-lg hover:translate-y-[-3px]'>
                 PROJECTS
-            </a>
+            </Link>
         </div>
         
             </div>
