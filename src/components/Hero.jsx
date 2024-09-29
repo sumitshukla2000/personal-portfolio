@@ -16,7 +16,7 @@ function Hero() {
                 
 
                 <div className='w-full font-display pt-4'>
-                    <p className='tracking-[0.3rem] sm:text-6xl text-4xl font-bold text-center'>HAY, I'M <span className='text-blue z-5 sm:drop-shadow-[5px_6px_0_#6E07F3] drop-shadow-[3px_4px_0_#6E07F3]'  
+                    <p className='tracking-[0.3rem] text-4xl md:text-6xl font-bold text-center'>HAY, I'M <span className='text-blue z-5 sm:drop-shadow-[5px_6px_0_#6E07F3] drop-shadow-[3px_4px_0_#6E07F3]'  
                     // style={{ textShadow: "5px 6px #6E07F3" }}
                     >SUMIT</span> SHUKLA</p>
                 </div>

@@ -6,7 +6,7 @@ import 'primeicons/primeicons.css';
 const Projects = () => {
     return (
         <>
-            <div className='w-full blockk'>
+            <div className='w-full blockk mt-12'>
                 <div className=" w-[80%] mx-auto">
                     <h1 className="text-3xl uppercase font-body font-extrabold text-center text-secDark">Projects</h1>
                     <div className="bg-blue h-[5px] w-[70px] mx-auto mt-2 rounded-xl"></div>
