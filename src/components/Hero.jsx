@@ -31,13 +31,13 @@ function Hero() {
                 <Button  label="Submit" />
         </div> */}
 
-        <div className='sm:py-6 w-[80%] mx-auto mt-4 pb-2 flex items-center justify-center'> 
+        <div className='sm:py-6 cursor-pointer w-[80%] mx-auto mt-4 pb-2 flex items-center justify-center'> 
             <Link to='projects'
              spy={true}
              offset={-90}
              smooth={true}
              duration={100}
-            className='font-body font-extralight text-white bg-blue py-2 px-12 text-md tracking-[2px] rounded-md  shadow-slate-500 transition ease-in-out focus:outline-none delay-50 hover:shadow-lg hover:translate-y-[-3px]'>
+            className='font-body font-extralight text-white bg-blue py-2 px-12 text-md tracking-[2px] rounded-md  shadow-slate-500 transition-transform duration-300 ease-in-out focus:outline-none  hover:shadow-lg active:scale-90'>
                 PROJECTS
             </Link>
         </div>

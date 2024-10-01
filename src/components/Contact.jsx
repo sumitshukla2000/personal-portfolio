@@ -23,7 +23,6 @@ const Contact = () => {
                 <Form />
             </div>
             </div>
-
         </div>
     </>
   )
