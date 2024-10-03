@@ -33,7 +33,7 @@ const Form = () => {
                     placeholder='Enter Your Email' rows={8}></textarea>
                 </div>
                 <div className='w-[90%] mx-auto flex justify-end px-4'>
-                    <button label="Show" onClick={submitButton} type='submit' className='md:w-[200px] w-full uppercase py-4 px-12 bg-blue rounded-md mt-8 text-whitee shadow-[5px_4px_14px_#4e5994] transition-all delay-150 hover:translate-y-[-10px] font-semibold'>Submit</button>
+                    <button label="Show" onClick={submitButton} type='submit' className='md:w-[200px] w-full uppercase py-4 px-12 bg-blue rounded-md mt-8 text-whitee shadow-[5px_4px_14px_#4e5994] transition-all duration-300 hover:translate-y-[-6px] font-semibold'>Submit</button>
                     </div>
                     <Dialog  header="Message" visible={visible} style={{ width: '50vw' }} onHide={() => {if (!visible) return; setVisible(false); }}>
                 <p className="m-0 text-gray-700 font-display">

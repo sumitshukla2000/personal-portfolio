@@ -1,5 +1,6 @@
 import { skills } from './constants'
 import '../index.css'
+import { resume } from './'
 function About() {
     return (
         <>
@@ -33,8 +34,9 @@ function About() {
                 Feel free to reach out—I’m always up for a new challenge, whether it’s a full-time role or freelance work. Let’s build something awesome together!
                 </p>
 
-                <div className='flex justify-center items-center  md:block'>
-                <button className="mt-4 mx-2 transition ease-in hover:translate-y-[-5%] text-whitee opacity-80 font-display text-sm bg-blue px-12 rounded  py-4 shadow-[0px_0px_100px] shadow-blue font-extrathin tracking-widest uppercase">Contact</button>
+                <div className='flex justify-center items-center md:block'>
+                <a href={resume} target='_blank' >
+                <button className="mt-4 mx-2 transition-transform ease-in hover:translate-y-[-5px] duration-150 text-whitee opacity-80 hover:opacity-90 font-display text-sm bg-blue px-12 rounded  py-4 shadow-[0px_0px_100px] shadow-blue font-extrathin tracking-widest uppercase">Download Resume</button></a>
                 </div>
                     </div>
 
